@@ -1,0 +1,27 @@
+log-lib is a library for PHP-framework CodeIgniter.
+This is a simple loglib to have a activities log of the eniter system flow
+
+by adding it in autoload you can start using this in your application, 
+
+
+Changelog
+1.0.0
+auto log folder creation with execuation permission added, 
+
+Features
+It's simple steps to intagrate with your application
+It's full indipendant script, no need to have any dependancies 
+
+Installing 
+
+Step 1) Upload the files to your application in appropriate directorys
+
+Step 2) Load the library in autoload file in your config folder
+OR
+Step 2) Load the library by calling load->lib in your controller
+
+Step 3) Call the Library to log the message
+        i.e $this->loglib->logall(array('class' => $this->router->fetch_class(), 'method' => $this->router->fetch_method(), 'data' => 'Some data to be logged'));
+
+The library in a nutshell
+This is the Php-Script that will log the things to the text file, user can use this in a simple way in the area of 3rd party intagration or while testing to catch the activities how the system flows
